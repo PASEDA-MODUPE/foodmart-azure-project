@@ -1,74 +1,132 @@
-It is a free HTML CSS template by https://templatesjungle.com/
-You can use this template as a starter template and start building as you require.
+# Production-Ready Azure Containerized Web Application with CI/CD
 
-The code is consistent and can be easily maintained as we have followed a good coding standard. We want everyone to easily understand it and modify it according to their requirement. As the main goal of providing these templates is to give you something to work on before even starting.
+## Project Overview
 
-Preview URL: 
-https://demo.templatesjungle.com/foodmart/
+This project demonstrates how to deploy a containerized web application to Microsoft Azure using modern cloud-native services. The application is packaged with Docker, stored in Azure Container Registry (ACR), deployed to Azure Container Apps, and automatically updated using GitHub Actions.
 
-Get the Full Version here: 
-https://templatesjungle.gumroad.com/l/foodmart-bootstrap-html-template
+The goal of this project was to build a production-style deployment pipeline while gaining hands-on experience with Azure cloud services, containerization, identity management, and CI/CD automation.
 
+---
 
-FREE FOR BOTH PERSONAL AND COMMERCIAL USE
+## Architecture
 
-This HTML Template is provided by TemplatesJungle.com and is free to use in both personal and commercial projects as long as you don't remove our credit link in the footer.
+```
+Developer
+    │
+    ▼
+GitHub Repository
+    │
+    ▼
+GitHub Actions (CI/CD)
+    │
+    ▼
+Docker Build
+    │
+    ▼
+Azure Container Registry (ACR)
+    │
+    ▼
+Azure Container Apps
+    │
+    ▼
+FoodMart Web Application
+```
 
-However, you can remove the credit link by paying for No Attribution version of the template.
+---
 
+## Azure Services Used
 
-RIGHTS
+- Azure Resource Group
+- Azure Container Registry (ACR)
+- Azure Container Apps
+- Azure Container Apps Environment
+- Log Analytics Workspace
+- Managed Identity
+- Azure Role-Based Access Control (RBAC)
 
-You are allowed to use it in your personal projects and commercial projects.
+---
 
-You can modify and sell it to your clients.
+## Technologies
 
+- Microsoft Azure
+- Docker
+- Git
+- GitHub
+- GitHub Actions
+- Azure CLI
+- HTML
+- CSS
+- JavaScript
+- Nginx
 
-PROHIBITIONS
+---
 
-You cannot remove the credit link which links back to templatesjungle.com.
+## Features
 
-You are not permitted to resell or redistribute (paid or free) as it is. 
+- Containerized web application
+- Automated CI/CD pipeline
+- Docker image management with Azure Container Registry
+- Secure authentication using Managed Identity
+- Centralized logging with Azure Log Analytics
+- Publicly accessible web application
 
-You cannot use it to build premium templates, themes or any other goods to be sold on marketplaces.
+---
 
-If you want to share the free resource in your blog, you must point it to original TemplatesJungle.com resource page. 
+## Deployment Process
 
-You cannot host the download file in your website.
+1. Built the application into a Docker image.
+2. Tagged the image for Azure Container Registry.
+3. Pushed the image to Azure Container Registry.
+4. Created an Azure Container Apps Environment.
+5. Deployed the application to Azure Container Apps.
+6. Configured Managed Identity and RBAC permissions.
+7. Automated deployments using GitHub Actions.
+8. Verified deployment and monitored logs using Azure CLI.
 
+---
 
-SUPPORT
+## Skills Demonstrated
 
-You can contact us to report any bugs and errors in the template. We will try and fix them immediately although it's a free resource.
+- Cloud Deployment
+- Docker Containerization
+- Azure CLI
+- Azure Container Registry
+- Azure Container Apps
+- GitHub Actions
+- Continuous Integration
+- Continuous Deployment
+- Azure RBAC
+- Managed Identity
+- Log Monitoring
 
-Feel free to let us know about what you want to see in the future downloads. We will definitely give it a thought while creating our next freebie.
+---
 
+## Live Demo
 
-CREDITS & REFERENCES
+**Application URL:**
 
-https://getbootstrap.com/
+https://foodmart-app.gentletree-927bcc1f.eastus.azurecontainerapps.io
 
-Stock Photos
-https://unsplash.com/
-https://www.freepik.com/
-https://www.pexels.com/
+---
 
-Fonts
-Google fonts
-https://fonts.google.com/
+## GitHub Repository
 
-Icons
-https://icon-sets.iconify.design/
+https://github.com/PASEDA-MODUPE/foodmart-azure-project
 
-Bootstrap Framework
-https://getbootstrap.com/
+---
 
-JQuery Plugins
+## Future Improvements
 
-Swiper Slider - https://swiperjs.com/
-Chocolat.js – a Free Lightbox Plugin -http://chocolat.insipi.de/
-Magnific Lightbox - https://github.com/dimsemenov/Magnific-Popup
+- Deploy the application to Azure Kubernetes Service (AKS)
+- Provision infrastructure using Terraform
+- Store secrets in Azure Key Vault
+- Add Azure Monitor and Application Insights
+- Configure a custom domain and HTTPS certificate
 
-Thanks for downloading from TemplatesJungle.com !
+---
 
+## Author
 
+**Modupe Paseda**
+
+Cloud Engineer | Azure | Docker | GitHub Actions
